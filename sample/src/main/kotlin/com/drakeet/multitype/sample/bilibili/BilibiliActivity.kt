@@ -39,7 +39,7 @@ class BilibiliActivity : MenuBaseActivity() {
   @VisibleForTesting
   internal lateinit var adapter: MultiTypeAdapter
 
-  private class JsonData {
+  public class JsonData {
 
     private val post00 = Post(R.drawable.img_00, PREFIX + "post00")
     private val post01 = Post(R.drawable.img_01, PREFIX + "post01")
@@ -49,7 +49,7 @@ class BilibiliActivity : MenuBaseActivity() {
     internal var category0 = Category("title0")
     internal var postArray = arrayOf(post00, post01, post10, post11)
 
-    internal var postList: MutableList<Post> = ArrayList()
+     var postList: MutableList<Post> = ArrayList()
 
     init {
       postList.add(post00)

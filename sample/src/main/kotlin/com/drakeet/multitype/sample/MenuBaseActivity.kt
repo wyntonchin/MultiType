@@ -27,6 +27,7 @@ import com.drakeet.multitype.sample.more.MoreApisPlayground
 import com.drakeet.multitype.sample.normal.NormalActivity
 import com.drakeet.multitype.sample.one2many.OneDataToManyActivity
 import com.drakeet.multitype.sample.payload.TestPayloadActivity
+import com.drakeet.multitype.sample.qin.QinActivity
 import com.drakeet.multitype.sample.selectable.MultiSelectableActivity
 import com.drakeet.multitype.sample.weibo.WeiboActivity
 
@@ -48,7 +49,7 @@ open class MenuBaseActivity : AppCompatActivity() {
       R.id.NormalActivity -> intent.setClass(this, NormalActivity::class.java)
       R.id.MultiSelectableActivity -> intent.setClass(this, MultiSelectableActivity::class.java)
       R.id.CommunicateWithBinderActivity -> intent.setClass(this, CommunicateWithBinderActivity::class.java)
-      R.id.BilibiliActivity -> intent.setClass(this, BilibiliActivity::class.java)
+      R.id.BilibiliActivity -> intent.setClass(this, QinActivity::class.java)
       R.id.WeiboActivity -> intent.setClass(this, WeiboActivity::class.java)
       R.id.OneDataToManyActivity -> intent.setClass(this, OneDataToManyActivity::class.java)
       R.id.TestPayloadActivity -> intent.setClass(this, TestPayloadActivity::class.java)
